@@ -1,0 +1,23 @@
+[2021-09-29 02:09:30,047] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: bank_term_deposit.get_data_from_mysql 2021-09-29T02:06:16.625672+00:00 [None]>
+[2021-09-29 02:09:30,059] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: bank_term_deposit.get_data_from_mysql 2021-09-29T02:06:16.625672+00:00 [None]>
+[2021-09-29 02:09:30,060] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 02:09:30,060] {taskinstance.py:1068} INFO - Starting attempt 1 of 2
+[2021-09-29 02:09:30,060] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 02:09:30,068] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_data_from_mysql> on 2021-09-29T02:06:16.625672+00:00
+[2021-09-29 02:09:30,073] {standard_task_runner.py:52} INFO - Started process 608 to run task
+[2021-09-29 02:09:30,076] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'bank_term_deposit', 'get_data_from_mysql', '2021-09-29T02:06:16.625672+00:00', '--job-id', '4', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/RunP1.py', '--cfg-path', '/tmp/tmpmdu4i2tf', '--error-file', '/tmp/tmpdt24n38w']
+[2021-09-29 02:09:30,076] {standard_task_runner.py:77} INFO - Job 4: Subtask get_data_from_mysql
+[2021-09-29 02:09:30,110] {logging_mixin.py:104} INFO - Running <TaskInstance: bank_term_deposit.get_data_from_mysql 2021-09-29T02:06:16.625672+00:00 [running]> on host 8e65cd15c929
+[2021-09-29 02:09:30,149] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=datath
+AIRFLOW_CTX_DAG_ID=bank_term_deposit
+AIRFLOW_CTX_TASK_ID=get_data_from_mysql
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-29T02:06:16.625672+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-09-29T02:06:16.625672+00:00
+[2021-09-29 02:09:31,920] {python.py:151} INFO - Done. Returned value was: None
+[2021-09-29 02:09:31,928] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=bank_term_deposit, task_id=get_data_from_mysql, execution_date=20210929T020616, start_date=20210929T020930, end_date=20210929T020931
+[2021-09-29 02:09:31,949] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-09-29 02:09:31,973] {local_task_job.py:151} INFO - Task exited with return code 0
